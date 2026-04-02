@@ -42,7 +42,7 @@ Login---Registration---Form/
 1. Download or clone this repository:
 
 ```
-[git clone https://github.com/your-username/Login---Registration---Form.git](https://ubadasiyal88.github.io/Login---Registration---Form/code/)
+https://ubadasiyal88.github.io/Login---Registration---Form/code/
 ```
 
 2. Open the project folder
