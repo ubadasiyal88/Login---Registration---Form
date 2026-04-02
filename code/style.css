@@ -174,3 +174,6 @@ form{
      border: 2px solid #fff;
      box-shadow:  none;
 }
+.toggle-password{
+    cursor:pointer;
+}
