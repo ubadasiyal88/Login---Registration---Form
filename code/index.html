@@ -3,13 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Login/Sigup Form </title>
+    <title>Login / Sign Up</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Login Form -->
+
+    <!-- MOBILE COVER: Login -->
+    <div class="mobile-cover" id="cover-login">
+        <div class="cover-content">
+            <h1>Welcome Back</h1>
+            <p>Already have an account</p>
+            <button class="btn cover-btn" id="cover-login-btn">Login</button>
+        </div>
+    </div>
+
+    <!-- MOBILE COVER: Register -->
+    <div class="mobile-cover hidden" id="cover-register">
+        <div class="cover-content">
+            <h1>Hello, Welcome</h1>
+            <p>Don't have an account?</p>
+            <button class="btn cover-btn" id="cover-register-btn">Register</button>
+        </div>
+    </div>
+
+    <!-- MOBILE LOGIN FORM -->
+    <div class="mobile-form hidden" id="mobile-login">
+        <form action="#">
+            <h1 style="text-align: center;">Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" class="pw-input" required>
+                <i class="fa-solid fa-lock pw-icon"></i>
+            </div>
+            <div class="forgot-link"><a href="#">Forgot Password?</a></div>
+            <button type="submit" class="btn">Login</button>
+            <p class="switch-link">Don't have an account? <a href="#" id="goto-register">Register</a></p>
+            <div class="social-icons">
+                <a href="https://google.com" target="_blank" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <!-- MOBILE REGISTER FORM -->
+    <div class="mobile-form hidden" id="mobile-register">
+        <form action="#">
+            <h1 style="text-align: center;">Registration</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" class="pw-input" required>
+                <i class="fa-solid fa-lock pw-icon"></i>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <p class="switch-link">Already have an account? <a href="#" id="goto-login">Login</a></p>
+            <div class="social-icons">
+                <a href="https://google.com" target="_blank" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <!-- DESKTOP CONTAINER -->
+    <div class="container" id="main-container">
+
         <div class="form-box login">
             <form action="#">
                 <h1>Login</h1>
@@ -17,64 +88,64 @@
                     <input type="text" placeholder="Username" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
-                 <div class="input-box">
-                    <input type="password" placeholder="Password" required>
-                    <i class="fa-solid fa-lock toggle-password"></i>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" class="pw-input" required>
+                    <i class="fa-solid fa-lock pw-icon"></i>
                 </div>
-                <div class="forgot-link">
-                    <a href="#">Forgot Password</a>
-                </div>
+                <div class="forgot-link"><a href="#">Forgot Password?</a></div>
                 <button type="submit" class="btn">Login</button>
                 <p>Or login with social platforms</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-google"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://google.com" target="_blank" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </form>
         </div>
-        <!-- Registar Frpm -->
-        <div class="form-box register">   
+
+        <div class="form-box register">
             <form action="#">
                 <h1>Registration</h1>
                 <div class="input-box">
                     <input type="text" placeholder="Username" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
-                 <div class="input-box">
+                <div class="input-box">
                     <input type="email" placeholder="Email" required>
                     <i class="fa-solid fa-envelope"></i>
                 </div>
-                 <div class="input-box">
-                    <input type="password" placeholder="Password" required>
-                    <i class="fa-solid fa-lock"></i>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" class="pw-input" required>
+                    <i class="fa-solid fa-lock pw-icon"></i>
                 </div>
                 <button type="submit" class="btn">Register</button>
-                <p>Or Register with social platforms</p>
+                <p>Or register with social platforms</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-google"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://google.com" target="_blank" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </form>
         </div>
-        <!-- Toggle box -->
-         <div class="toggle-box"></div>
-        <!-- Toggle box-left -->
-         <div class="toggle-panel toggle-left">
+
+        <div class="toggle-box"></div>
+
+        <div class="toggle-panel toggle-left">
             <h1>Hello, Welcome</h1>
-            <p>Don't have an account </p>
+            <p>Don't have an account?</p>
             <button class="btn register-btn">Register</button>
-         </div>
-         <!-- Toggle box-right -->
-         <div class="toggle-panel toggle-right">
-            <h1>Welcome</h1>
+        </div>
+
+        <div class="toggle-panel toggle-right">
+            <h1>Welcome Back</h1>
             <p>Already have an account</p>
             <button class="btn login-btn">Login</button>
-         </div>
+        </div>
+
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
