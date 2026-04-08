@@ -8,7 +8,10 @@ This project demonstrates a simple and clean user authentication interface with 
 ## 📌 Features
 
 * 🔄 Toggle between Login and Registration forms
-* 🎨 Clean and responsive UI design
+* 📱 Fully responsive design for desktop and mobile devices
+* 🎬 Animated mobile welcome cover flow
+* 👁️ Smart password visibility toggle (lock to eye icon while typing)
+* 🎨 Clean and modern UI design
 * ✅ Basic form validation using JavaScript
 * ⚡ Lightweight and fast (no external libraries)
 
@@ -54,14 +57,12 @@ https://ubadasiyal88.github.io/Login---Registration---Form/code/
 ---
 
 ## 🌐 Live Demo
-
-👉 (Add your GitHub Pages link here if deployed)
+👉 https://ubadasiyal88.github.io/Login---Registration---Form/code/
 
 ---
 
 ## 📸 Preview
-
-(Add a screenshot of your project here)
+Responsive login and registration interface with desktop and mobile support.
 
 ---
 
@@ -82,14 +83,15 @@ It helps in understanding:
 * 🔐 Backend integration (PHP / Firebase / Node.js)
 * 📧 Email verification system
 * 💾 Database storage
+* 🌙 Dark mode support
 * 🔑 Secure authentication
 
 ---
 
-## 🙋‍♂️ Author
+## 🙋 Contributors
 
-**Ubada Siyal**
-Aspiring Web & Mobile App Developer
+* Ubada Siyal
+* Kiran Shams
 
 ---
 
